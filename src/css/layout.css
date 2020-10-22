@@ -1,0 +1,132 @@
+* {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.sidebar {
+    position: fixed;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: #022e3b; 
+    transition: all .5s ease;
+}
+
+.sidebar header {
+    font-size: 22px;
+    text-align: center;
+    line-height: 70px;
+    background: #001418;
+    user-select: none;
+}
+
+.sidebar ul a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 50px;
+    font-size: 17px;
+    color: white;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(255, 255, 255, .1);
+    border-bottom: 1px solid black;
+    transition: .2s;
+}
+
+.navItems:hover a {
+    padding-left: 50px;
+    background: #fdc32c;
+    color: #004960;
+    text-decoration: none;
+}
+
+.sidebar ul a i {
+    margin-right: 12px;
+}
+
+#check {
+    display: none;
+}
+
+label #btn,label #cancel {
+    position: absolute;
+    cursor: pointer;
+    background: #042331;
+    border-radius: 3px;
+}
+
+label #btn{
+    left: 40px;
+    top: 25px;
+    font-size: 35px;
+    color: #fdc32c;
+    padding: 6px 12px;
+    transition: all .5s;
+}
+
+label #cancel{
+    z-index: 1111;
+    left: -195px;
+    top: 17px;
+    font-size: 30px;
+    color: #0a5275;
+    padding: 4px 9px;
+    transition: all .5s ease;
+}
+
+#check:checked ~ .sidebar {
+    left: 0;
+}
+
+#check:checked ~ label #btn {
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#check:checked ~ label #cancel {
+    left: 195px;
+}
+
+#check:checked ~ section {
+    margin-left: 250px;
+}
+
+section {
+    /* background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(../images/enquiry_bg.jpg); */
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    transition: all .5s ease;
+    background-attachment: fixed;
+    /* padding: 150px; */
+    padding-top: 70px;
+}
+
+.layout_header {
+    background : #001418;;
+    height: 100px;
+    box-shadow: 6px 5px 20px rgba(0, 0, 0, 0.452);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1111;
+}
+
+.layout_header h3 {
+    color: #0d4a61;
+    line-height: 100px;
+    user-select: none;
+    margin-left: 20px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-shadow: 0 1px 1px rgb(100, 98, 98);
+}
+.layout_header h3 span {
+    color: #fdc32c;
+    margin-left: 3px;
+}

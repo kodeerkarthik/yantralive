@@ -1,0 +1,113 @@
+.hero {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(../images/enquiry_bg.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+
+.form-box {
+    width: 380px;
+    height: 450px;
+    position: relative;
+    margin: 6% auto;
+    background: #fdc32c;
+    padding: 5px;
+    overflow: hidden;
+}
+
+.button-box {
+    width: 225px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #ff61241f;
+    border-radius: 30px;
+}
+
+.toggle_btn {
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    color: white;
+    outline: none;
+    position: relative;
+}
+
+.bttn {
+    top: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: #004960;
+    border-radius: 30px;
+    transition: .5s;
+}
+
+.input-group {
+    top: 180px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+
+.submit-btn {
+    width: 85%;
+    text-align: center;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    color: white;
+    background: #004960;
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+}
+
+#login {
+    left: 50px;
+}
+#login1 {
+    left: -400px;
+}
+
+#register {
+    left: 450px;
+}
+#register1 {
+    left: 50px;
+}
+
+#btn {
+    left: 0;
+}
+#btn1 {
+    left: 110px;
+}
+
+.social-icons {
+    margin: 30px auto;
+    text-align: center;
+}
+
+.social-icons img {
+    width: 30px;
+    margin: 0 12px;
+    box-shadow: 0 0 20px 0 #7f7f7f3d;
+    cursor: pointer;
+    border-radius: 50%;
+}
